@@ -1,0 +1,13 @@
+{
+  "name": "@kovalenko/primeng-style",
+  "version": "0.0.1",
+  "peerDependencies": {
+    "@angular/common": ">=20",
+    "@angular/core": ">=20",
+    "@primeng/themes": ">=20"
+  },
+  "dependencies": {
+    "tslib": "^2.3.0"
+  },
+  "sideEffects": false
+}

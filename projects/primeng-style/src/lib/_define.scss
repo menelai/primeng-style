@@ -1,0 +1,40 @@
+// цвета для prime
+$primary: #006CDC;
+$red: #DD161D;
+$yellow: #EAC31B;
+$orange: #FF9200;
+$peach: #FF4500; // не из prime
+$alert: #FF0004; // не из prime
+$pink: #FF006E;
+$indigo: #DD13FF;
+$purple: #8C2CFF;
+$blue: #00B8FF;
+$cyan: #00F9FF;
+$teal: #00FFBE;
+$green: #02F200;
+$lime: #B2F500; // не из prime
+$gray: #484847;
+$bluegray: #64748b;
+
+// затемненные цвета
+$primaryDark: #004E9F;
+$primaryDarker: #002C5B; // взят напрямую из брендбука
+$redDark: #9B1215;
+$redDarker:darken($redDark, 10%);
+$yellowDark: #A88700;
+$yellowDarker:darken($yellowDark, 10%);
+$orangeDark: #BE6700;
+$orangeDarker:darken($orangeDark, 10%);
+$indigoDark: #9B10B9;
+$indigoDarker:darken($indigoDark, 10%);
+$blueDark: #0081B7;
+$blueDarker:darken($blueDark, 10%);
+$greenDark: #10AA00;
+$greenDarker:darken($greenDark, 10%);
+
+// глобальные стили
+
+$hat: var(--primary-300);
+$visor: var(--primary-400);
+$background: lighten($primary, 51%);
+$base: white;
