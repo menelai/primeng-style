@@ -1,3 +1,10 @@
+## [1.0.3](https://github.com/menelai/primeng-style/compare/v1.0.2...v1.0.3) (2026-05-26)
+
+
+### Bug Fixes
+
+* float-label style ([4b59b78](https://github.com/menelai/primeng-style/commit/4b59b782501a55ed79c17ae70e4864b811660085))
+
 ## [1.0.2](https://github.com/menelai/primeng-style/compare/v1.0.1...v1.0.2) (2025-11-28)
 
 
