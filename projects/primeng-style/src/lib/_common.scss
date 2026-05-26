@@ -359,6 +359,7 @@ body {
   --p-button-padding-y: 8.5px;
 
   --p-textarea-padding-y: 0.6075rem;
+  --p-floatlabel-over-active-top: -7px;
 
   // TODO удалить после выкатки фикса в primeng
   .p-dialog-top,
@@ -568,14 +569,13 @@ a.p-button {
 @mixin float-label {
   label {
     transform: unset;
-    top: -0.47rem !important;
     left: 4px;
     font-size: 11px;
     padding: 0 4px;
     z-index: 1;
 
     &:before {
-      top: 0.47rem;
+      top: calc(-1 * var(--p-floatlabel-over-active-top));
       height: 1px;
       background: var(--p-content-background);
       content: '';
