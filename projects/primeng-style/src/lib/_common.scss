@@ -284,6 +284,7 @@ $dark-link-color: #7cadd6;
   --mat-sidenav-scrim-color: rgba(0, 0, 0, 0.6);
   --p-overlay-modal-padding: 16px !important;
   --p-paginator-border-radius: 0 !important;
+  --p-datatable-body-cell-padding: 8px;
   --card-number-width: 80px;
   --updated-color: #ffaa1a;
   background: var(--p-content-background) !important;
@@ -429,10 +430,6 @@ a:link, a:visited, a.select {
 }
 
 .p-datatable {
-  .p-datatable-tbody > tr > td, .p-datatable-thead > tr > th {
-    padding: 8px;
-  }
-
   .p-datatable-thead > tr > th {
     font-weight: 300;
     color: #a5a5a5;
