@@ -1,3 +1,10 @@
+## [1.0.5](https://github.com/menelai/primeng-style/compare/v1.0.4...v1.0.5) (2026-05-29)
+
+
+### Bug Fixes
+
+* td padding ([2aa7c22](https://github.com/menelai/primeng-style/commit/2aa7c22af1317b715d95dc8cfd934d95c21d868f))
+
 ## [1.0.4](https://github.com/menelai/primeng-style/compare/v1.0.3...v1.0.4) (2026-05-29)
 
 
