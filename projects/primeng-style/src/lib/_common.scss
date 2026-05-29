@@ -284,7 +284,6 @@ $dark-link-color: #7cadd6;
   --mat-sidenav-scrim-color: rgba(0, 0, 0, 0.6);
   --p-overlay-modal-padding: 16px !important;
   --p-paginator-border-radius: 0 !important;
-  --p-datatable-body-cell-padding: 8px;
   --card-number-width: 80px;
   --updated-color: #ffaa1a;
   background: var(--p-content-background) !important;
@@ -361,6 +360,8 @@ body {
 
   --p-textarea-padding-y: 0.6075rem;
   --p-floatlabel-over-active-top: -7px;
+
+  --p-datatable-body-cell-padding: 8px;
 
   // TODO удалить после выкатки фикса в primeng
   .p-dialog-top,
