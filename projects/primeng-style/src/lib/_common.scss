@@ -282,12 +282,9 @@ $dark-link-color: #7cadd6;
   --filter-bg: #f7f8fc;
   font-size: 14px;
   --mat-sidenav-scrim-color: rgba(0, 0, 0, 0.6);
-  --p-overlay-modal-padding: 16px !important;
-  --p-paginator-border-radius: 0 !important;
   --card-number-width: 80px;
   --updated-color: #ffaa1a;
   background: var(--p-content-background) !important;
-  --p-form-field-color: var(--p-content-color) !important;
   --mat-sidenav-content-text-color: var(--p-content-color);
   --eu-table-even: #f6f6f6;
   --eu-table-odd: #eeeeee;
@@ -344,35 +341,6 @@ body {
 
   display: flex;
   flex-direction: column;
-  --p-tabs-tab-font-weight: 400;
-  --p-floatlabel-font-weight: 400;
-  --p-textarea-lg-font-size: 14px;
-  --p-textarea-lg-padding-x: 8px;
-  --p-textarea-lg-padding-y: 0.6075rem;
-
-  --p-inputtext-padding-x: 8px;
-  --p-inputtext-padding-y: 0.6075rem;
-
-  --p-select-padding-x: 8px;
-  --p-select-padding-y: 7px;
-
-  --p-button-padding-y: 8.5px;
-
-  --p-textarea-padding-y: 0.6075rem;
-  --p-floatlabel-over-active-top: -7px;
-
-  --p-datatable-body-cell-padding: 8px;
-  --p-datatable-header-cell-padding: 8px;
-
-  // TODO удалить после выкатки фикса в primeng
-  .p-dialog-top,
-  .p-dialog-topright,
-  .p-dialog-bottomleft,
-  .p-dialog-bottomright {
-    .p-dialog {
-      margin: 0.75rem !important;
-    }
-  }
 }
 
 .eu-menu {
@@ -418,128 +386,6 @@ a:link, a:visited, a.select {
   margin-right: auto;
 }
 
-.p-card .p-card-body {
-  padding: 16px;
-}
-
-.p-card .p-card-content {
-  padding: 0;
-}
-
-.p-inputtext {
-  padding: 8.5px 8px;
-  line-height: normal;
-}
-
-.p-datatable {
-  .p-datatable-thead > tr > th {
-    font-weight: 300;
-    color: #a5a5a5;
-  }
-}
-
-.p-toast .p-toast-message .p-toast-message-content .p-toast-message-text {
-  margin:0;
-}
-
-.p-toast .p-toast-message .p-toast-message-content .p-toast-detail {
-  margin-top:0.2rem;
-}
-
-.p-toast-message-icon {
-  display: none;
-}
-
-.p-progressspinner.spinner36 {
-  width: 33px;
-  height: 33px;
-}
-
-.p-dialog {
-  overflow: hidden;
-  border: none !important;
-  .p-dialog-header {
-    .p-dialog-title {
-      font-weight: 500;
-    }
-
-    .p-icon-wrapper {
-      pointer-events: none;
-    }
-  }
-}
-
-.p-fieldset {
-  padding: 8px;
-  margin:0;
-}
-
-.p-fieldset .p-fieldset-legend {
-  border: none;
-  padding: 0;
-  margin-bottom: 0;
-  background: none;
-  font-weight: 500;
-}
-
-.p-fieldset .p-fieldset-legend span {
-  padding: 0.5rem 0.75rem;
-}
-
-.p-fieldset .p-fieldset-content {
-  padding: 0;
-}
-
-.gap32 {
-  gap: 32px;
-}
-
-.p-inputgroup .p-float-label:last-child input {
-  border-top-right-radius: unset;
-  border-bottom-right-radius: unset;
-}
-
-.p-inputgroup p-floatlabel:last-child input {
-  border-top-right-radius: 6px;
-  border-bottom-right-radius: 6px;
-}
-
-.p-dialog .p-dialog-footer {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  gap: 0.5rem;
-
-  button {
-    margin:0;
-  }
-}
-
-.p-button {
-  padding-top: 8.5px;
-  padding-bottom: 8.5px;
-}
-
-.p-calendar {
-  display: flex;
-}
-.p-datepicker {
-  min-width: 0 !important;
-}
-.p-progress-spinner {
-  display: block;
-}
-a.p-button {
-  text-decoration: none;
-  line-height: normal;
-}
-.p-dialog-header {
-  padding-bottom: 0;
-}
-.p-dialog-content {
-  padding-top: 1.5rem;
-}
-
 .eu-table {
   table {
     min-width: 800px;
@@ -557,52 +403,6 @@ a.p-button {
     &.odd {
       background-color: var(--eu-table-odd);
     }
-  }
-}
-
-.p-card .p-card-title {
-  font-size: 1.25rem;
-  font-weight: 500;
-}
-
-@mixin float-label {
-  label {
-    transform: unset;
-    left: 4px;
-    font-size: 11px;
-    padding: 0 4px;
-    z-index: 1;
-
-    &:before {
-      top: calc(-1 * var(--p-floatlabel-over-active-top));
-      height: 1px;
-      background: var(--p-content-background);
-      content: '';
-      position: absolute;
-      left: 1px;
-      right: 0;
-      z-index: -1;
-    }
-  }
-}
-
-.has-selector-unsupported {
-  .p-floatlabel {
-    @include float-label;
-  }
-}
-
-.p-floatlabel {
-  &:has(input:focus),
-  &:has(input.p-filled),
-  &:has(input:-webkit-autofill),
-  &:has(textarea:focus),
-  &:has(textarea.p-filled),
-  &:has(.p-inputwrapper-focus),
-  &:has(.p-inputwrapper-filled),
-  &:has(input[placeholder]),
-  &:has(textarea[placeholder]) {
-    @include float-label;
   }
 }
 
@@ -651,14 +451,6 @@ a.p-button {
 
 .grey-icon {
   color: #94a3b8;
-}
-
-.p-menu .p-menuitem-link {
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  position: relative;
 }
 
 .ws-flex1 {
@@ -733,21 +525,6 @@ a.p-button {
 .poen {
   pointer-events: none;
 }
-
-.p-floatlabel:has(.p-textarea) {
-  textarea {
-    display: block;
-  }
-  label {
-    --p-floatlabel-position-y: 0.7675rem;
-  }
-}
-
-textarea {
-  min-height: 36px !important;
-  display: block;
-}
-
 
 .abs {
   position: absolute !important;
