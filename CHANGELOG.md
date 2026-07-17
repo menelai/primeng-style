@@ -1,3 +1,11 @@
+## [1.0.7](https://github.com/menelai/primeng-style/compare/v1.0.6...v1.0.7) (2026-07-17)
+
+
+### Bug Fixes
+
+* build ([9fb23ca](https://github.com/menelai/primeng-style/commit/9fb23cab9e7f6b37ed7385059cae7f0c44497107))
+* primeng override removed ([8857cf3](https://github.com/menelai/primeng-style/commit/8857cf37151d7ee02a0bb8dd566e8c6feaeb45a6))
+
 ## [1.0.6](https://github.com/menelai/primeng-style/compare/v1.0.5...v1.0.6) (2026-05-29)
 
 
